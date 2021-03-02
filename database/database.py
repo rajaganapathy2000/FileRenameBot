@@ -60,4 +60,4 @@ async def thumb(id):
         t = SESSION.query(Thumbnail).get(id)
         return t
     finally:
-        SESSION.clos()
+        SESSION.close()
